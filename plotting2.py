@@ -27,14 +27,14 @@ grainsize_plot = plt.plot (processed_grainsize_data[:,2],processed_grainsize_dat
 plt.xlabel("Diameter(microns)")
 plt.ylabel("Concentration")
 plt.title("Grain Size Data")
-grainsize_figure.savefig('./grainsize-fig.png')
+grainsize_figure.savefig('results/grainsize-fig.png')
 
 
 #all_data = pd.read_csv("gs_data.csv", index_col='Date', header=4)
 #all_data.info()
-#all_data.to_json("data_output.json")
+#all_data.to_json("results/data_output.json")
 
-#json_data = pd.read_json("data_output.json")
+#json_data = pd.read_json("results/data_output.json")
 #json_data.info()
 
 #print(json_data.loc['195012':'197512','Value'])
