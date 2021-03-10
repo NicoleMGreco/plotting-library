@@ -6,16 +6,16 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-def read_data():
+def read_data(filename):
     # Create an array (a multi-dimensional table) out of our data file, full of text
-    all_data = np.genfromtxt("../gs_data.csv", delimiter=',',skip_header=1)
+    all_data = np.genfromtxt(filename, delimiter=',',skip_header=1)
     print(all_data)
 
     # Select the data range we are interested in, convert it into a new array, full of numbers
     grainsize_data = np.array(all_data[1:,:], dtype=float)
     print(grainsize_data)
     return grainsize_data
-grainsize_data = read_data()
+grainsize_data = read_data("../gs_data.csv")
 
 # Compute a new column by multiplying column number 1 to Kelvin
 grainsize_calculated = (grainsize_data[:,0,None] - 5) * 2
