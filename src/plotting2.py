@@ -10,7 +10,7 @@ def read_data(filename):
     """This function reads data from a specified filename. The specified filename should point to a .csv file"""
     # Create an array (a multi-dimensional table) out of our data file, full of text
     all_data = np.genfromtxt(filename, delimiter=',',skip_header=1)
-    print(all_data)
+
 
     # Select the data range we are interested in, convert it into a new array, full of numbers
     grainsize_data = np.array(all_data[1:,:], dtype=float)
