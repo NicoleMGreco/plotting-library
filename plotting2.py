@@ -51,8 +51,8 @@ def plot():
     plot_file = "grainsize-fig.png"
     json_output_file = "data_output2.json"
 
-    data_directory = os.path.realpath(os.path.join(os.path.dirname(__file__), "..","data"))
-    results_directory = os.path.realpath(os.path.join(os.path.dirname(__file__), "..","results"))
+    data_directory = os.path.realpath(os.path.join(os.path.dirname(__file__),"data"))
+    results_directory = os.path.realpath(os.path.join(os.path.dirname(__file__),"results"))
     
     input_filename = os.path.join(data_directory, input_file)
     plot_filename = os.path.join(results_directory, plot_file)
