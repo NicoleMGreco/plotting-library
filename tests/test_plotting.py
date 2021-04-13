@@ -28,10 +28,10 @@ def test_plot_data():
     plot_filename = os.path.join(results_directory,plot_file)
 
     input_data = np.array([[0,20,30],[1,200,310]])
-    
+
     if os.path.exists(plot_filename):
         os.remove(plot_filename)
-        
+
     plotting.plot_data(input_data, plot_filename)
 
     assert (os.path.exists(plot_filename))
@@ -53,3 +53,4 @@ def test_convert_data():
     output_data = pd.read_json(json_filename)
 
     assert input_data.info() is output_data.info()
+    

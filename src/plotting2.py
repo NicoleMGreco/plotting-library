@@ -5,8 +5,8 @@ data as a .json file"""
 
 # Import the libraries we are using. It is good practice to import all necessary
 # libraries in the first lines of a file.
-import os as os
-import sys as sys
+import os
+import sys
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -63,7 +63,7 @@ def plot():
 
     data_directory = os.path.realpath(os.path.join(os.path.dirname(__file__),"data"))
     results_directory = os.path.realpath(os.path.join(os.path.dirname(__file__),"results"))
-    
+
     input_filename = os.path.join(data_directory, input_file)
     plot_filename = os.path.join(results_directory, plot_file)
     json_output_file = os.path.join(results_directory, json_output_file)
